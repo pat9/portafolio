@@ -1,0 +1,129 @@
+@import "../font-icons/flaticon.css";
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Color Theme Swatches in Hex */
+.vía-láctea-en-sierra-nevada-1-hex { color: #0367A6; }
+.vía-láctea-en-sierra-nevada-2-hex { color: #024873; }
+.vía-láctea-en-sierra-nevada-3-hex { color: #012840; }
+.vía-láctea-en-sierra-nevada-4-hex { color: #011826; }
+.vía-láctea-en-sierra-nevada-5-hex { color: #0A7AA6; }
+
+/* Color Theme Swatches in RGBA */
+.vía-láctea-en-sierra-nevada-1-rgba { color: rgba(3, 103, 165, 1); }
+.vía-láctea-en-sierra-nevada-2-rgba { color: rgba(2, 71, 114, 1); }
+.vía-láctea-en-sierra-nevada-3-rgba { color: rgba(1, 39, 63, 1); }
+.vía-láctea-en-sierra-nevada-4-rgba { color: rgba(0, 23, 38, 1); }
+.vía-láctea-en-sierra-nevada-5-rgba { color: rgba(9, 121, 165, 1); }
+
+/* Color Theme Swatches in HSLA */
+.vía-láctea-en-sierra-nevada-1-hsla { color: hsla(202, 96, 33, 1); }
+.vía-láctea-en-sierra-nevada-2-hsla { color: hsla(202, 96, 22, 1); }
+.vía-láctea-en-sierra-nevada-3-hsla { color: hsla(202, 96, 12, 1); }
+.vía-láctea-en-sierra-nevada-4-hsla { color: hsla(202, 96, 7, 1); }
+.vía-láctea-en-sierra-nevada-5-hsla { color: hsla(196, 88, 34, 1); }
+
+header{
+    display: grid;
+    grid-template-rows: 50px 80px;
+    max-width:100%;
+}
+
+.social{
+    background-color: #1A4A73 ;
+}
+
+.social-container{
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+
+}
+
+.social-link{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.social-link:hover{
+    background-color: rgba(9, 121, 165, .7);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+nav{
+    background-color: #296CA6;
+    display: grid;
+    grid-template-rows: 1.3em 1fr;
+}
+
+.logo {
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    margin-top: 5px;
+}
+
+.menu {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:auto;
+    padding : 0;
+}
+
+.menu-item{
+    margin: 0 10px;
+   
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: underline;
+    transition: ease .4s;
+    
+}
+
+.menu-item a:hover {
+    background-color:rgba(2, 71, 114, .8);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2,72,115);
+    background: linear-gradient(187deg, rgba(2,72,115,1) 0%, rgba(5,96,179,1) 33%, rgba(0,212,255,1) 100%);
+}
+
+.profile-picture img{
+    width: 100px;
+    border-radius: 50%;
+
+}
+
+.about-me{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.about-me .description{
+    padding: 0 20px;
+    text-align: center;
+}
