@@ -31,11 +31,17 @@ body {
 header{
     display: grid;
     grid-template-rows: 50px 80px;
+    grid-template-areas: "social" "nav";
     max-width:100%;
+    
 }
 
 .social{
     background-color: #1A4A73 ;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 10;
 }
 
 .social-container{
@@ -52,6 +58,14 @@ header{
     text-decoration: none;
     margin-left: 10px;
     cursor: pointer;
+    
+}
+
+.social-link.download-cv{
+    background: #011826;
+    padding: 10px;
+    justify-self: center;
+    border-radius: 5px;
 }
 
 .social-link:hover{
@@ -61,6 +75,7 @@ header{
 }
 
 nav{
+    grid-area: nav;
     background-color: #296CA6;
     display: grid;
     grid-template-rows: 1.3em 1fr;
@@ -123,7 +138,82 @@ nav{
     margin-bottom: 0;
 }
 
+
 .about-me .description{
     padding: 0 20px;
     text-align: center;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    row-gap: 20px;
+}
+
+.title-2{
+    width: 90px;
+    margin: 0 15px;
+    padding: 20px 0;
+    border-bottom: 1px solid #011826;
+}
+
+.projects-list{
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 100%;
+    box-sizing: border-box;
+}
+
+.project{
+    background: cornsilk;
+    padding: 0;
+    
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.project .project-img{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.project .project-img img{
+    padding: 0%;
+    max-width: 100%;
+    display: block;
+    max-height: 100%;
+}
+
+.project .project-overlay{
+    background: rgba(9, 121, 165, .8);
+    color: white;
+    position: absolute;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    transition: ease 0.5s;
+}
+
+.project:hover .project-overlay{
+    display: flex;
+
+}
+
+.project-overlay p {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.project-goto{
+    display: none;
+    /* display: block; */
+    background: #011826;
+    padding: 10px;
+    border-radius: 5px;
 }
